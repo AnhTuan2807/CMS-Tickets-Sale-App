@@ -1,0 +1,102 @@
+@use "variable";
+
+.home-container {
+    background-color: #ffffff;
+    border-radius: 24px;
+    margin-top: 20px;
+    margin-right: 32px;
+    margin-bottom: 20px;
+    padding-top: 24px;
+    padding-left: 24px;
+    width: 1180px;
+    height: 963px;
+    left: 321px;
+    top: 85px;
+    
+    .header-title {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 54px;
+      width: 178px;
+      height: 54px;
+    }
+  
+    .home-body-content {
+      width: 100%;
+      .header-title {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+        margin-bottom: 40px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        width: 100%;
+        height: 28px;
+      }
+  
+      .body-line-chart {
+        margin: 0 auto;
+        width: 1400px;
+        height: 200px;
+      }
+  
+      .body-total {
+        margin-top: 40px;
+        span {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 22px;
+          color: #1e0d03;
+          opacity: 0.5;
+        }
+  
+        .total-turnover {
+          span {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 30px;
+            opacity: 1;
+          }
+        }
+      }
+  
+      .body-circle-chart {
+        margin-top: 80px;
+        display: flex;
+        justify-content: flex-start;
+        height: 246px;
+  
+        .circle1 {
+          margin-right: 170px;
+          width: 400px;
+          height: 246px;
+  
+          div {
+            text-align: center;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+          }
+        }
+  
+        .circle2 {
+          width: 400px;
+          height: 246px;
+  
+          div {
+            text-align: center;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+  }

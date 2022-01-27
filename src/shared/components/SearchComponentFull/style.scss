@@ -1,0 +1,33 @@
+/* input search  */
+.input-group{
+    display: flex;
+    align-items: center;
+    height: 48px;
+    width: 437px;
+    padding: 10px 16px 10px 16px;
+    border-radius: 12px;
+    background: #EDEDED;
+    left: -540px;
+}
+.input-control{
+    width: 394px;
+    height: 28px;
+    background: #EDEDED;
+    border: none;
+    outline:none;
+    font-style: italic;
+}
+input.input-control:focus{
+    outline: none;
+    color: black;
+    
+}
+.icon-control.anticon{
+   color: #1E0D03;
+   margin-left: 1rem;
+}
+.icon-control.anticon svg{
+    height: 24px;
+    width: 24px;
+    
+}
