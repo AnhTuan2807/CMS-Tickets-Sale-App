@@ -6,9 +6,15 @@ import { routerLogin, routerMainPublicPage } from "@view/Login/routerLogin";
 import { AppstoreOutlined } from "@ant-design/icons";
 import { IRouter } from "./interface";
 import {routerHome} from '@view/Home/router'
+import { routerQuanLyVe } from "@view/QuanLyVe/routerQuanLyVe";
+import { routerDoiSoatVe } from "@view/DoiSoatVe/routerDoiSoatVe";
+import { routerGoiDichVu } from "@view/GoiDichVu/routerGoiDichVu";
 
 export const privatePage: IRouter[] = [
   routerHome,
+  routerQuanLyVe,
+  routerDoiSoatVe,
+  routerGoiDichVu,
 ];
 
 export const publicPage: IRouter[] = [

@@ -9,6 +9,9 @@ $margin-top-body: 2.7rem;
   display: flex;
   align-items: center;
 
+  &__search {
+    margin-left: $margin;
+  }
   &__language {
     margin-right: $margin;
   }
@@ -63,6 +66,23 @@ $margin-top-body: 2.7rem;
     }
 
     .noti-badge {
+      width: 1.5rem;
+      height: 1.5rem;
+      background-color: #ff6760;
+      font-size: 1rem;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      line-height: 1.6;
+      border-radius: 1.5rem;
+      position: absolute;
+      top: -4px;
+      right: -5px;
+      box-shadow: 0 0 0 3px $color-background-layout;
+    }
+    .mail-badge {
       width: 1.5rem;
       height: 1.5rem;
       background-color: #ff6760;

@@ -6,8 +6,10 @@ import ChangeLanguage from "@shared/components/ChangeLanguage";
 import { RootState } from "@modules";
 import { imgAvatar, noImg } from "@shared/assets/images";
 import { Badge, } from "antd";
-import { BellOutlined } from "@ant-design/icons";
+import { BellOutlined, MailOutlined } from "@ant-design/icons";
 import { useHistory } from "react-router";
+import SearchComponent from "@shared/components/SearchComponent/SearchComponent";
+import InputSearch from "@shared/components/SearchComponentFull";
 
 interface IHeaderComponent {
   profile?: UserEntity;
@@ -28,15 +30,21 @@ const HeaderComponent = () => {
   return (
     <>
       <div className="header-component">
-        <div className="header-component__language">
-          <ChangeLanguage />
+        <div className="header-component__search" >
+          <InputSearch />
         </div>
+        {/* <div className="header-component__language">
+          <ChangeLanguage />
+        </div> */}
         {/* for mobifone  */}
+        <div className="bell-badge">
+          <div className="mail-badge">5</div>
+          <MailOutlined className='icon-bell' />
+        </div>
         <div className="bell-badge">
           <div className="noti-badge">5</div>
           <BellOutlined className="icon-bell" />
         </div>
-
         <div
           className="header-component__dropdown"
         >

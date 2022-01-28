@@ -1,9 +1,10 @@
 import React, { memo, useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { privatePage } from "@routers/mainRouter";
 import MenuItem from "./ItemMenu";
 import CheckPermission from "@shared/hoc/CheckPermission";
 import { logo } from "@shared/assets/images";
+import { TrangChu, QuanLyVe, DoiSoatVe, CaiDat } from "@shared/assets/svg";
 import { UilAngleRight } from '@iconscout/react-unicons'
 import { IRouter } from "@routers/interface";
 
@@ -48,11 +49,12 @@ const SiderComponent: React.FC<{ className: string, setClassName: (className: st
   }
 
   useEffect(() => {
-    if (className == "sider-component") {
-      setWidth(0)
-    } else {
-      setWidth("100%")
-    }
+    // if (className == "sider-component") {
+    //   setWidth(0)
+    // } else {
+      
+    // }
+    setWidth("100%")
   }, [className])
 
   return (
@@ -62,10 +64,31 @@ const SiderComponent: React.FC<{ className: string, setClassName: (className: st
       </div>
       <div className="mask" style={{ width }}>
         <div className="logo">
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" width="133px" height="58px"/>
         </div>
         <div className="menu">
           <RenderMenu listNav={privatePage} location={location.pathname} />
+          <div className="sidebar-sidebar-menu">
+            <ul className="sidebar-menu">
+                <li className='sidebar has-child'>
+                    <NavLink to='/'><img src={TrangChu} /> Trang chủ </NavLink>
+                </li>
+                <li className="sidebar has-child">
+                    <NavLink to='/QuanLyVe'><img src={QuanLyVe} /> Quản lý vé </NavLink>
+                </li>
+                <li className="sidebar has-child">
+                    <NavLink to='/DoiSoatVe'><img src={DoiSoatVe} /> Đối soát vé </NavLink> 
+                </li>
+                <li className="sidebar has-child">
+                    <NavLink to='/'><img src={CaiDat} /> Cài đặt </NavLink>
+                    <ul className="sidebar has-child menu-sub" >
+                        <li>
+                            <NavLink to='/GoiDichVu'> Gói dịch vụ </NavLink>
+                        </li>
+                    </ul> 
+                </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
