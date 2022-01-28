@@ -6,7 +6,7 @@ import InputSearch from "@shared/components/SearchComponentFull";
 import { SearchOutlined } from "@ant-design/icons";
 
 
-const QuanLyVe = () => {
+const DoiSoatVe = () => {
   // useState và useEffect nên đặt ở đầu  
   const [modal, setModal] = useState<IModal>({
     isVisible: false,
@@ -15,24 +15,21 @@ const QuanLyVe = () => {
   const { formatMessage } = useAltaIntl();
   
   return (
-    <div className='QuanLyVe'>
-        <div className='qlv-container'>
-          <div className='qlv-title'>
-            <h1>Danh sách vé</h1>
+    <div className='DoiSoatVe'>
+        <div className='dsv-container'>
+          <div className='dsv-title'>
+            <h1>Đối soát vé</h1>
           </div>
-          <div className='qlv-body-content'>
+          <div className='dsv-body-content'>
             <div className='body-title'>
-              <div className='qlv-search'>
+              <div className='dsv-search'>
                 <input type='text' placeholder='Tìm bằng số vé' />
                 <i className='fas fa-search'></i>
                 <SearchOutlined className='icon-control' />
               </div>
-              <div className='qlv-filter-container'>
-                <div className='filter' >
-                  <i className='fas fa-filter'></i>Lọc vé
-                </div>
+              <div className='dsv-filter-container'>
               {/* <FilterModal /> */}
-              <div className='export'>Xuất file(.csv)</div>
+              <div className='export'>Chốt đối soát</div>
           </div>
             </div>
           </div>     
@@ -41,4 +38,4 @@ const QuanLyVe = () => {
   );
 };
 
-export default React.memo(QuanLyVe);
+export default React.memo(DoiSoatVe);
