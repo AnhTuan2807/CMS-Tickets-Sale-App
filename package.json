@@ -81,6 +81,7 @@
   "dependencies": {
     "@ant-design/charts": "^1.1.2",
     "@ant-design/icons": "^4.6.2",
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "@iconscout/react-unicons": "^1.1.6",
     "@iconscout/unicons": "^4.0.0",
     "@reduxjs/toolkit": "^1.5.0",
@@ -93,6 +94,7 @@
     "compression-webpack-plugin": "^1.1.12",
     "css-modules-typescript-loader": "^4.0.0",
     "file-saver": "^2.0.5",
+    "firebase": "^9.6.5",
     "history": "^4.7.2",
     "jquery": "^3.4.1",
     "lodash": "^4.17.21",
