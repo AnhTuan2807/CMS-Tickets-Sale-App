@@ -81,6 +81,7 @@
   "dependencies": {
     "@ant-design/charts": "^1.1.2",
     "@ant-design/icons": "^4.6.2",
+    "@firebase/firestore": "^3.4.4",
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@iconscout/react-unicons": "^1.1.6",
     "@iconscout/unicons": "^4.0.0",
@@ -94,7 +95,7 @@
     "compression-webpack-plugin": "^1.1.12",
     "css-modules-typescript-loader": "^4.0.0",
     "file-saver": "^2.0.5",
-    "firebase": "^9.6.5",
+    "firebase": "4.12.0",
     "history": "^4.7.2",
     "jquery": "^3.4.1",
     "lodash": "^4.17.21",
@@ -110,6 +111,8 @@
     "react-player": "^2.9.0",
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
+    "redux-firebase": "^0.3.3",
+    "redux-firestore": "^0.15.2",
     "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0",
     "redux-persist-transform-filter": "^0.0.20"

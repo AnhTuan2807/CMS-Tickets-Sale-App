@@ -5,16 +5,16 @@ import { useAltaIntl } from "@shared/hook/useTranslate";
 import InputSearch from "@shared/components/SearchComponentFull";
 import { SearchOutlined } from "@ant-design/icons";
 import { Filter } from "@assets/svg";
-
+import firebase from "../../config/firebaseConfig";
 
 const QuanLyVe = () => {
   // useState và useEffect nên đặt ở đầu  
 
-  //28/01
+  // 28/01
   // const [data, setData] = useState([])
   // const [modalShow, setModalShow] = useState(false)
   // //Lọc vé theo status
-  // const ref = db.collection('ticket')
+  // const ref = firebase.collection('ticket')
   // const filterStatus = (status: String) => {
   //   ref.where('status', '==', status).onSnapshot((querySnapshot) => {
   //     const tickets: any = []
@@ -40,11 +40,11 @@ const QuanLyVe = () => {
   // useEffect(() => {
   //   setData(ticketData.tickets)
   // }, [ticketData.tickets])
-  const [modal, setModal] = useState<IModal>({
-    isVisible: false,
-    dataEdit: null,
-  });
-  const { formatMessage } = useAltaIntl();
+  // const [modal, setModal] = useState<IModal>({
+  //   isVisible: false,
+  //   dataEdit: null,
+  // });
+  // const { formatMessage } = useAltaIntl();
   
   return (
     <div className='QuanLyVe'>
@@ -56,7 +56,7 @@ const QuanLyVe = () => {
             <div className='body-title'>
               <div className='qlv-search'>
                 <input type='text' placeholder='Tìm bằng số vé' />
-                <i className='fas fa-search'></i>
+                {/* <i className='fas fa-search'></i> */}
                 <SearchOutlined className='icon-control' />
               </div>
               <div className='qlv-filter-container'>
@@ -110,8 +110,8 @@ const QuanLyVe = () => {
                         )
                       })
                     : ''}
-                </table>
-              </div> */}
+                </table> */}
+              {/* </div> */}
           </div>
             </div>
           </div>     

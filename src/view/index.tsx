@@ -7,7 +7,8 @@ import App from "./App";
 import { PersistGate } from "redux-persist/integration/react";
 // import 'package:unicons/unicons.dart';
 import '@fortawesome/fontawesome-free/css/all.min.css'
-// import 'font-awesome/css/font-awesome.min.css';
+
+
 ReactDOM.render(
   <Router>
     <Provider store={store}>
