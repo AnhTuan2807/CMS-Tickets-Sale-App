@@ -24,7 +24,7 @@ const DoiSoatVe = () => {
             <div className='body-title'>
               <div className='dsv-search'>
                 <input type='text' placeholder='Tìm bằng số vé' />
-                <i className='fas fa-search'></i>
+                {/* <i className='fas fa-search'></i> */}
                 <SearchOutlined className='icon-control' />
               </div>
               <div className='dsv-filter-container'>

@@ -24,7 +24,7 @@ const GoiDichVu = () => {
             <div className='body-title'>
               <div className='gdv-search'>
                 <input type='text' placeholder='Tìm bằng số vé' />
-                <i className='fas fa-search'></i>
+                {/* <i className='fas fa-search'></i> */}
                 <SearchOutlined className='icon-control' />
               </div>
               <div className='gdv-filter-container'>
