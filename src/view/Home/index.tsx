@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import MainTitleComponent from "@shared/components/MainTitleComponent";
 import { IModal } from "./interface";
 import { useAltaIntl } from "@shared/hook/useTranslate";
+import CalendarPicker from "@shared/components/Calendar";
 
 
 
@@ -22,7 +23,7 @@ const Home = () => {
         <div className='home-body-content'>
           <div className='header-title'>
             <span>Doanh thu</span>
-            {/* <Calendar /> */}
+            <CalendarPicker/>
           </div>
 
           <div className='body-line-chart'>
